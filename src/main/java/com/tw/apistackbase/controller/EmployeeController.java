@@ -15,7 +15,7 @@ public class EmployeeController {
     private List<Employee> employeeList = new ArrayList<>();
     private final Logger log = Logger.getLogger(this.getClass().getName());
 
-    @GetMapping(path = "/search", produces = "appli cation/json")
+    @GetMapping(path = "/search", produces = "application/json")
     public ResponseEntity<List<Employee>> getAllEmployees() {
         return ResponseEntity.ok(employeeList);
     }
